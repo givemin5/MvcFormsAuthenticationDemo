@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@if (!String.IsNullOrEmpty(ViewBag.Name))
+{
+    <div>
+        Your Name is @ViewBag.Name 
+
+        @Html.ActionLink("Logout", "Logout")
+    </div>
+}
+
+
+
